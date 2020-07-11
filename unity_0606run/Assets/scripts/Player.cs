@@ -35,6 +35,8 @@ public class Player : MonoBehaviour
     public AudioClip soundhit;
     [Tooltip("判斷是否死亡")]
     public bool liveOrDeath;
+    [Tooltip("動畫控制器")]
+    public Animator ani;
     #endregion
 
     
@@ -55,7 +57,8 @@ public class Player : MonoBehaviour
     /// </summary>
     private void Slide()
     {
-        print("slide啟動!!");
+        bool key = Input.GetKey(KeyCode.Z);
+        ani.SetBool("slide switch", key);
     }
     /// <summary>
     /// 吃金幣:金幣數量增加+金幣消失+金幣音效
@@ -87,7 +90,7 @@ public class Player : MonoBehaviour
      */
     private void Start()
     {
-        Jump();
+       
     }
     /*
      * 更新 update

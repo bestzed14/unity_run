@@ -700,6 +700,7 @@ MonoBehaviour:
   soundslide: {fileID: 8300000, guid: 83ad8e7e9bf27314ab5aed8fc1c2cc4e, type: 3}
   soundhit: {fileID: 8300000, guid: 67b2bc5f2e7b67d46a55f28e456c58ed, type: 3}
   liveOrDeath: 0
+  ani: {fileID: 331636250}
 --- !u!1 &349517901
 GameObject:
   m_ObjectHideFlags: 0
@@ -10784,13 +10785,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1981680398}
   - component: {fileID: 1981680397}
+  - component: {fileID: 1981680399}
   m_Layer: 0
   m_Name: "\u7DF4\u7FD2\u7528\u7269\u4EF6"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1981680397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10817,6 +10819,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1981680399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981680396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06ae831adf43dde499bafffeda02c224, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zonbie: {fileID: 331636249}
+  zonbieTran: {fileID: 331636252}
+  cam: {fileID: 349517903}
+  kirakira: {fileID: 1610684421}
 --- !u!4 &2003571554 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7995962846072953407, guid: 06c5c7ea659c3fd479113dafe98ea259,

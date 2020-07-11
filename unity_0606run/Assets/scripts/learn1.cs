@@ -5,7 +5,7 @@ using UnityEngine;
 public class learn1 : MonoBehaviour
 {
     
-    private void Update()
+    private void Start()
     {
         /*
          * 靜態成員用法
@@ -16,7 +16,17 @@ public class learn1 : MonoBehaviour
         //print(Random.value);
         //print(Time.time);
         print(Random.Range(100, 501));
-        
+        test();
+        Skill("升龍拳");
+    }
 
+    public void test()
+            {
+                print("測試用");
+            }
+    public void Skill(string s)
+    {
+        print("施放技能:" + s);
+        print("播放音效:" + s);
     }
 }
